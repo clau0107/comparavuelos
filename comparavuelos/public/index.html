@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ComparaVuelos - Buscar vuelos baratos</title>
+  <meta name="description" content="ComparaVuelos te ayuda a encontrar los mejores precios de vuelos al instante." />
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>ComparaVuelos</h1>
+    <form id="searchForm" aria-label="Buscar vuelos">
+      <div class="field">
+        <input id="from" name="from" placeholder="Origen (ej: EZE, Buenos Aires)" autocomplete="off"/>
+        <ul id="from-suggestions" class="suggestions"></ul>
+      </div>
+      <div class="field">
+        <input id="to" name="to" placeholder="Destino (ej: MAD, Madrid)" autocomplete="off"/>
+        <ul id="to-suggestions" class="suggestions"></ul>
+      </div>
+      <div class="field small">
+        <input id="depart" type="date" name="depart"/>
+        <input id="return" type="date" name="return"/>
+      </div>
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main id="results" class="results">
+    <!-- resultados se inyectan por JS -->
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> ComparaVuelos</small>
+  </footer>
+</body>
+</html>
