@@ -1,0 +1,134 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>ComparaVuelos – Compará vuelos y encontrá el mejor precio</title>
+  <meta name="description" content="ComparaVuelos te ayuda a encontrar vuelos baratos comparando diferentes aerolíneas y agencias en un solo lugar.">
+
+  <!-- IMPORTANTE: paths RELATIVOS (sin / adelante) -->
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="cv-header">
+    <div class="cv-container cv-header-inner">
+
+      <div class="cv-brand">
+        <div class="cv-logo-mark">CV</div>
+        <div class="cv-brand-text">
+          <div class="cv-brand-name">ComparaVuelos</div>
+          <div class="cv-brand-tagline">Tu comparador de vuelos en un solo lugar</div>
+        </div>
+      </div>
+
+      <nav class="cv-nav">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#ventajas">Ventajas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="cv-hero">
+      <div class="cv-container cv-hero-grid">
+
+        <div class="cv-hero-text">
+          <h1>Encontrá vuelos al mejor precio en un solo lugar</h1>
+
+          <p class="sub">
+            ComparaVuelos analiza cientos de opciones para mostrarte el precio más conveniente,
+            sin letra chica y sin vueltas.
+          </p>
+
+          <ul class="cv-hero-list">
+            <li>✅ Comparación rápida de vuelos</li>
+            <li>✅ Resultados claros y fáciles de entender</li>
+            <li>✅ Listo para crecer con más aerolíneas y agencias</li>
+          </ul>
+        </div>
+
+        <!-- BUSCADOR -->
+        <div class="cv-search-card">
+          <h2>Buscar vuelos</h2>
+
+          <form id="searchForm">
+            <div class="cv-field">
+              <label for="from">Origen</label>
+              <input id="from" placeholder="Ej: BUE, Buenos Aires">
+              <ul id="from-suggestions" class="suggestions"></ul>
+            </div>
+
+            <div class="cv-field">
+              <label for="to">Destino</label>
+              <input id="to" placeholder="Ej: MAD, Madrid">
+              <ul id="to-suggestions" class="suggestions"></ul>
+            </div>
+
+            <div class="cv-field cv-field-row">
+              <div class="cv-field">
+                <label for="depart">Salida</label>
+                <input id="depart" type="date">
+              </div>
+              <div class="cv-field">
+                <label for="return">Regreso</label>
+                <input id="return" type="date">
+              </div>
+            </div>
+
+            <button type="submit" class="cv-btn-primary">
+              Buscar vuelos
+            </button>
+
+            <p class="cv-small-hint">
+              * Por ahora usamos resultados de prueba para el MVP.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="cv-results-section">
+      <div class="cv-container">
+        <h2>Resultados</h2>
+        <p class="cv-results-note">
+          Cuando busques, vas a ver acá abajo las opciones disponibles.
+        </p>
+
+        <div id="results" class="results"></div>
+      </div>
+    </section>
+
+    <!-- VENTAJAS -->
+    <section id="ventajas" class="cv-features">
+      <div class="cv-container">
+        <h2>¿Por qué usar ComparaVuelos?</h2>
+
+        <div class="beneficios">
+          <div>
+            <h3>Claridad</h3>
+            <p>Precios finales y opciones ordenadas, sin confusiones.</p>
+          </div>
+          <div>
+            <h3>Ahorro de tiempo</h3>
+            <p>Un solo buscador para múltiples aerolíneas.</p>
+          </div>
+          <div>
+            <h3>Mejores oportunidades</h3>
+            <p>Ofertas y combinaciones inteligentes.</p>
+          </div>
+          <div>
+            <h3>Listo para crecer</h3>
+            <p>Arquitectura preparada para nuevas AP
