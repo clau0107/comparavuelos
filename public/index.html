@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>ComparaVuelos – Compará vuelos y encontrá el mejor precio</title>
-  <meta name="description" content="ComparaVuelos te ayuda a encontrar vuelos baratos comparando diferentes aerolíneas y agencias en un solo lugar.">
+  <meta name="description" content="ComparaVuelos te ayuda a encontrar vuelos baratos comparando aerolíneas en un solo lugar.">
 
-  <!-- Paths relativos (sin /) -->
+  <!-- Paths relativos -->
   <link rel="stylesheet" href="styles.css">
   <script defer src="main.js"></script>
 </head>
@@ -43,33 +43,33 @@
       <div class="cv-container cv-hero-grid">
 
         <div class="cv-hero-text">
-          <h1>Encontrá vuelos al mejor precio en un solo lugar</h1>
+          <h1>Encontrá vuelos al mejor precio</h1>
 
           <p class="sub">
-            ComparaVuelos analiza opciones para mostrarte el precio más conveniente,
-            sin letra chica y sin vueltas.
+            Compará aerolíneas y elegí la mejor opción para tu viaje,
+            sin vueltas y sin letra chica.
           </p>
 
           <ul class="cv-hero-list">
-            <li>✅ Comparación rápida de vuelos</li>
-            <li>✅ Resultados claros y fáciles de entender</li>
-            <li>✅ Listo para crecer con más aerolíneas y agencias</li>
+            <li>✅ Comparación rápida</li>
+            <li>✅ Resultados claros</li>
+            <li>✅ Listo para crecer</li>
           </ul>
         </div>
 
-        <!-- BUSCADOR (ÚNICO) -->
+        <!-- BUSCADOR -->
         <div class="cv-search-card">
           <h2>Buscar vuelos</h2>
 
           <form id="searchForm" aria-label="Buscar vuelos">
             <div class="cv-field">
               <label for="from">Origen</label>
-              <input id="from" name="from" placeholder="Ej: BUE, Buenos Aires" autocomplete="off" required>
+              <input id="from" name="from" placeholder="Ej: BUE" autocomplete="off" required>
             </div>
 
             <div class="cv-field">
               <label for="to">Destino</label>
-              <input id="to" name="to" placeholder="Ej: MAD, Madrid" autocomplete="off" required>
+              <input id="to" name="to" placeholder="Ej: MAD" autocomplete="off" required>
             </div>
 
             <div class="cv-field cv-field-row">
@@ -84,29 +84,28 @@
               </div>
             </div>
 
-            <button type="submit" class="cv-btn-primary">Buscar vuelos</button>
+            <button type="submit" class="cv-btn-primary">
+              Buscar vuelos
+            </button>
 
             <p class="cv-small-hint">
-              * Por ahora usamos resultados de prueba para el MVP.
+              * Resultados simulados para el MVP
             </p>
           </form>
-
         </div>
 
       </div>
     </section>
 
-    <!-- RESULTADOS (ÚNICO) -->
+    <!-- RESULTADOS -->
     <section class="cv-results-section">
       <div class="cv-container">
         <h2>Resultados</h2>
         <p class="cv-results-note">
-          Cuando busques, vas a ver acá abajo las opciones disponibles.
+          Las opciones disponibles aparecen acá abajo.
         </p>
 
-        <div id="results" class="results">
-          <!-- Se inyecta por JavaScript -->
-        </div>
+        <div id="results" class="results"></div>
       </div>
     </section>
 
@@ -118,44 +117,46 @@
         <div class="beneficios">
           <div>
             <h3>Claridad</h3>
-            <p>Precios finales y opciones ordenadas, sin confusiones.</p>
+            <p>Precios finales y opciones ordenadas.</p>
           </div>
           <div>
             <h3>Ahorro de tiempo</h3>
-            <p>Un solo buscador para múltiples aerolíneas.</p>
+            <p>Un solo buscador para todo.</p>
           </div>
           <div>
             <h3>Mejores oportunidades</h3>
-            <p>Ofertas y combinaciones inteligentes.</p>
+            <p>Elegí siempre la mejor tarifa.</p>
           </div>
           <div>
-            <h3>Listo para crecer</h3>
-            <p>Estructura preparada para integrar APIs reales.</p>
+            <h3>Escalable</h3>
+            <p>Listo para conectar APIs reales.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CÓMO FUNCIONA -->
+    <!-- COMO FUNCIONA -->
     <section id="como-funciona" class="cv-how">
       <div class="cv-container cv-how-grid">
+
         <div>
           <h2>¿Cómo funciona?</h2>
           <ol class="cv-steps">
-            <li>Ingresás origen, destino y fechas.</li>
-            <li>El sistema procesa tu búsqueda.</li>
-            <li>Te mostramos resultados ordenados para comparar.</li>
-            <li>Elegís la mejor opción y vas a reservar.</li>
+            <li>Ingresás origen y destino</li>
+            <li>Buscamos las mejores opciones</li>
+            <li>Comparás precios</li>
+            <li>Reservás con la aerolínea</li>
           </ol>
         </div>
 
         <div class="cv-how-box">
-          <h3>MVP en marcha</h3>
+          <h3>MVP activo</h3>
           <p>
-            Esta versión usa resultados de prueba. El próximo paso es conectar una API real
-            (Skyscanner/Travelpayouts/Kiwi) con backend seguro.
+            Esta versión es un MVP funcional.
+            El próximo paso es integrar una API real de vuelos.
           </p>
         </div>
+
       </div>
     </section>
 
@@ -165,19 +166,19 @@
   <footer id="contacto" class="cv-footer">
     <div class="cv-container cv-footer-inner">
       <div>
-        <strong>ComparaVuelos</strong><br />
+        <strong>ComparaVuelos</strong><br>
         <span class="cv-footer-muted">
-          Proyecto de metabuscador de vuelos en construcción.
+          Metabuscador de vuelos – MVP
         </span>
       </div>
-      <div class="cv-footer-meta">
-        <span>© <span id="year"></span> ComparaVuelos</span>
+
+      <div>
+        © <span id="year"></span> ComparaVuelos
       </div>
     </div>
   </footer>
 
   <script>
-    // año automático (sin tocar main.js)
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
